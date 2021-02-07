@@ -1,5 +1,5 @@
-# FlutterWebLimitations
-a list of Flutter web limitations: 
+# Flutter Web Limitations
+a list of Flutter web limitations.
 
 
 
@@ -24,3 +24,8 @@ main() {
 ```
 see [dartlang/issues/44876](https://github.com/dart-lang/sdk/issues/44876)
 
+## Dart SDK libraries not available in Flutter:
+- `dart:io` which includes `Platform` to detect current platform and `File` for transferring bytes. 
+<!--  add alternative solutions  -->
+
+see [flutter/flutter/39998](https://github.com/flutter/flutter/issues/39998)

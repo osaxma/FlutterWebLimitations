@@ -29,3 +29,8 @@ see [dartlang/issues/44876](https://github.com/dart-lang/sdk/issues/44876)
 <!--  add alternative solutions  -->
 
 see [flutter/flutter/39998](https://github.com/flutter/flutter/issues/39998)
+
+## Flutter Web is not SEO friendly
+
+Flutter Web isn not SEO friendly [see flutter/issues/46789](https://github.com/flutter/flutter/issues/46789)
+and hard, if even possible, to motetize with ads [see flutter/issues/40376](https://github.com/flutter/flutter/issues/40376)

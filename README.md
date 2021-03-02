@@ -34,3 +34,26 @@ see [flutter/flutter/39998](https://github.com/flutter/flutter/issues/39998)
 
 Flutter Web is not SEO friendly [see flutter/issues/46789](https://github.com/flutter/flutter/issues/46789)
 making it hard, if even possible, to motetize with ADS [see flutter/issues/40376](https://github.com/flutter/flutter/issues/40376)
+
+
+## Flutter Web JsonEncode behavior
+In Web, using `jsonEncode` will convert `double` values to `int` when the fractional part is equal to zero as shown below:
+
+```dart
+import 'dart:convert';
+
+void main() {
+  final double x = 3.0;
+  final double y = 3.1;
+  final jsonString = jsonEncode({'x': x, 'y': y});
+  
+  print(jsonString); // prints {"x":3,"y":3.1}
+   
+  // Decoding jsonString above works fine in web. 
+  // Though decoding jsonString in iOS/Android will throw an error
+  // when the expected value is double
+  // e.g.
+  //    `DataClass.fromJson(jsonString);` 
+  //    where DataClass has x & y defined as doubles 
+}
+```

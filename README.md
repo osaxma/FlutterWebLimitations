@@ -57,3 +57,8 @@ void main() {
 ```
 
 For more details, [see dart-lang/issues/45160](https://github.com/dart-lang/sdk/issues/45160)
+
+## Flutter Web does not support "dart-grpc"
+
+Flutter Web does not support and seemingly doesn't plan to support [dart-grpc](https://pub.dev/packages/grpc) [flutter/issues/48054](https://github.com/flutter/flutter/issues/48054#issuecomment-571254564)
+this package doesn't figure in the [List of dart sdk libraries not available in Flutter Web](flutter/flutter/39998)

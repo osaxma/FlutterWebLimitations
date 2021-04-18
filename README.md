@@ -66,3 +66,6 @@ Flutter web supports `Hot Restart`, but not `Hot Reload`, see issue [flutter/iss
 
 Flutter Web does not support and seemingly doesn't plan to support [dart-grpc](https://pub.dev/packages/grpc) [flutter/issues/48054](https://github.com/flutter/flutter/issues/48054#issuecomment-571254564)
 this package doesn't figure in the [List of dart sdk libraries not available in Flutter Web](flutter/flutter/39998)
+
+## GIFs have some issues in PWA (mobile):
+GIFs in mobile browsers for Flutter Web have some ongoing issues (e.g., not playing at all or stops playing on scrolling and never play again, etc). see [flutter/issues/78223](https://github.com/flutter/flutter/issues/78223)

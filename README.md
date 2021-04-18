@@ -57,3 +57,7 @@ void main() {
 ```
 
 For more details, [see dart-lang/issues/45160](https://github.com/dart-lang/sdk/issues/45160)
+
+## Flutter Web does not support "Hot Reload"
+
+Flutter web supports `Hot Restart`, but not `Hot Reload`, see issue [flutter/issues/53041](https://github.com/flutter/flutter/issues/53041)

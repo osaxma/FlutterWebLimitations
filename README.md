@@ -30,6 +30,28 @@ see [dartlang/issues/44876](https://github.com/dart-lang/sdk/issues/44876)
 
 see [flutter/flutter/39998](https://github.com/flutter/flutter/issues/39998)
 
+## Flutter Platform Detection
+
+In Flutter web, you cannot use `Platform` from `dart:io` (e.g. `Platform.iOS` or `Platform.Android`). In order to detect the platform, you need to import the `foundation` package such as:
+
+```dart
+import 'package:flutter/foundation.dart';
+
+bool get isOS => defaultTargetPlatform == TargetPlatform.iOS;
+bool get isAndroid => defaultTargetPlatform == TargetPlatform.android;
+bool get isMacOS => defaultTargetPlatform == TargetPlatform.macOS;
+bool get isWindows => defaultTargetPlatform == TargetPlatform.windows;
+bool get isLinux => defaultTargetPlatform == TargetPlatform.linux;
+
+// Extra: A handy way to detect to know if the client is on Web using Mobile:
+bool get isWebMobile => kIsWeb &&
+    (defaultTargetPlatform == TargetPlatform.iOS ||
+        defaultTargetPlatform == TargetPlatform.android);
+```
+
+In addition, if you like to detect if 
+
+
 ## Flutter Web is not SEO friendly
 
 Flutter Web is not SEO friendly [see flutter/issues/46789](https://github.com/flutter/flutter/issues/46789)
